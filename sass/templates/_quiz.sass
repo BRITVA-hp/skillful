@@ -1,0 +1,113 @@
+.quiz
+  margin-bottom: 120px
+  &__container
+    border-radius: 10px
+    background: #fff
+    max-width: 1440px
+    padding: 80px 80px 60px
+  &__row
+    display: flex
+    justify-content: space-between
+    gap: 30px
+  &__title
+    font-family: 'UniNeue', sans-serif
+    font-weight: 700
+    font-size: 30px
+    line-height: 120%
+    margin-bottom: 20px
+  &__progress
+    display: flex
+    align-items: center
+    justify-content: space-between
+    gap: 35px
+    margin-bottom: 35px
+    &__text
+      font-family: 'UniNeue', sans-serif
+      font-weight: 700
+      font-size: 18px
+      line-height: 120%
+      color: #09b33b
+      white-space: nowrap
+    &__line
+      width: 100%
+      height: 7px
+      border-radius: 5px
+      background: #e0e0e0
+      overflow: hidden
+      &__inner
+        width: 30%
+        background: #09b33b
+        height: 100%
+  &__box
+    min-height: 430px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    &__wrap
+      margin-bottom: 30px
+    &__row
+      display: grid
+      grid-template-columns: 1fr 1fr 1fr
+      gap: 20px 40px
+
+  &__card
+    height: 60px
+    position: relative
+  &__radio
+    display: block
+    width: 100%
+    height: 100%
+    position: relative
+    cursor: pointer
+    &__input
+      display: none
+      &:checked + .quiz__radio__content
+        border: 2px solid #0090e7
+        border-radius: 5px
+        font-weight: 700
+        color: #0090e7
+    &__content
+      display: flex
+      width: 100%
+      height: 100%
+      align-items: center
+      padding: 10px 20px
+      border: 1px solid rgba(0, 0, 25, 0.15)
+      border-radius: 5px
+      font-weight: 400
+      font-size: 16px
+      line-height: 120%
+  &__input
+    background: transparent
+    padding: 0 20px
+    height: 100%
+  &__button-group
+    display: flex
+    align-items: stretch
+    gap: 10px
+  &__button
+    padding: 0
+    max-width: 200px
+  &__block
+    text-align: center
+    white-space: nowrap
+    padding-top: 15px
+    &__img
+      margin-bottom: 40px
+      display: block
+      img
+        max-width: none
+    &__text
+      font-size: 18px
+      span
+        text-decoration: underline
+        color: #0093fd
+    &__tel
+      font-family: 'UniNeue', sans-serif
+      font-weight: 700
+      font-size: 30px
+      line-height: 120%
+      color: #000019
+      text-decoration: none
+      margin: 15px 0
+      display: inline-block
